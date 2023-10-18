@@ -69,7 +69,7 @@ export const modules: {
     if (!getStatusColorMod) return moduleFindFailed("getStatusColorMod");
     const getStatusColor = webpack.getFunctionBySource<(status: string) => string>(
       getStatusColorMod,
-      STATUS_COLOR_REGEX,
+      ".TWITCH",
     );
     if (!getStatusColor) return moduleFindFailed("getStatusColor");
     modules.getStatusColor = getStatusColor;

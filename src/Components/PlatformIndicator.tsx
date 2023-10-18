@@ -61,7 +61,7 @@ function TheRealPlatformIndicator(props: PropsWithUser): React.ReactElement | nu
       }`;
       const color = getStatusColor(status);
       const Icon = Icons[platform as Platforms] ?? Icons.desktop;
-      return <Icon color={`var(--${color}`} tooltip={tooltip} className={profileBadge24} />;
+      return <Icon color={`var(--${color})`} tooltip={tooltip} className={profileBadge24} />;
     });
     setIcons(icons);
   }, [statuses]);
